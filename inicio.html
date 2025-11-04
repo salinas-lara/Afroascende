@@ -2,29 +2,49 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @import 'tailwindcss';
+    <link rel="icon" href="/img/ESPIRAL.png" type="image/png">
+    <title>Página Inicial - Afroascende</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lora:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'header-800': '#a44819',
+                        'amarelo-100': '#f8b936',
+                        'marrombg-100': '#54200a',
+                        'marrombgtexto-100': '#441907',
+                        'laranjasubtitulos-100': '#ab8a38',
+                        'texto': '#bba37a',
+                        'footer': '#441907',
+                        'laranjaapagado': '#927e5c',
+                        'amareloapagado': '#bba37a',
+                    },
+                    fontFamily: {
+                        'titulos': ['Britannic W01 Medium Compressed', 'sans-serif'],
+                        'corpo': ['Agrandir', 'sans-serif'],
+                        'serif-display': ['"Cormorant Garamond"', 'serif'],
+                        'serif-body': ['"Lora"', 'serif'],
+                    },
+                    spacing: {
+                        '135': '33.75rem',
+                        '160': '40rem',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
         @import url(https://db.onlinewebfonts.com/c/41eb2c8877eac89478d806875aa9327b?family=Britannic+W01+Medium+Compressed);
         @import url(https://db.onlinewebfonts.com/c/1dc7840abb13fcda12aa8d1cb21fb832?family=Agrandir);
-        @theme {
-            --color-header-800: #a44819;
-            --color-amarelo-100: #f8b936;
-            --color-marrombg-100: #54200a;
-            --font-titulos: Britannic Medium Compressed;
-            --color-marrombgtexto-100: #441907;
-            --color-laranjasubtitulos-100: #ab8a38;
-            --font-corpo: Agrandir, sans-serif;
-            --color-texto: #bba37a;
-            --color-footer: #441907;
-            --color-laranjaapagado: #927e5c;
-            --color-amareloapagado:#bba37a;
-        }
-    
     </style>
 
 </head>
@@ -33,20 +53,20 @@
     <header id="header" class="bg-header-800 py-9 font-titulos">
         <div class="flex flex-row gap-4 justify-around ">
             <div class="flex flex-row">
-                <div class="size-15 py-8"> <img src="img/ESPIRAL.png" alt=""></div>
+                <div class="size-16 py-8 mr-4"><img src="img/ESPIRAL.png" alt="" class=""></div>
                 <h1 class="text-amarelo-100 text-8xl font-medium py-2">AFROASCENDE</h1>
             </div>
             <div class="flex flex-col">
-                <div class="flex gap-5 text-amarelo-100 hover:marker">
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                <div class="flex gap-5 py-7 text-amarelo-100 hover:marker">
+                    <button class="hover:text-white text-5xl transition-all delay-75 duration-200 "><a
                             href="historia.html">História</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-5xl transition-all delay-75 duration-200 "><a
                             href="arte.html">Arte</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-5xl transition-all delay-75 duration-200 "><a
                             href="politica.html">Política</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-5xl transition-all delay-75 duration-200 "><a
                             href="religiao.html">Religião</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-5xl transition-all delay-75 duration-200 "><a
                             href="contato.html">Contatos</a></button>
                 </div>
 
@@ -55,19 +75,19 @@
     </header>
 
     <main class="bg-marrombg-100">
-        <div class="flex justify-around py-12 ">
-            <div class="">
-                <img src="img/fotopaginainicial.png" alt="" class=" rounded-xl border outline-4 size-175">
+        <section class="flex justify-around py-12">
+            <div class="rounded-xl">
+                <img src="img/fotopaginainicial.png" alt="" class="shadow-xl rounded-xl size-135">
             </div>
 
 
-            <div class=" bg-marrombgtexto-100 rounded-xl h-150 w-150 ">
+            <div class=" bg-marrombgtexto-100 rounded-xl h-135 w-135 shadow-md">
                 <div>
-                    <h2 class="text-laranjasubtitulos-100 font-titulos text-4xl text-center py-8 pl-4">OQUE É A
+                    <h2 class="text-laranjasubtitulos-100 font-titulos text-6xl text-center py-5 pl-4">OQUE É A
                         REPRESENTATIVIDADE?</h2>
                 </div>
                 <div>
-                    <p class="text-texto font-corpo text-3xl px-8 pt-5 pb-0">
+                    <p class="text-texto font-corpo text-2xl px-8 pt-5 pb-0">
                         Representatividade é a garantia da existência de voz, visibilidade e participação ativa de
                         diferentes
                         grupos sociais, que podem ser baseados em raça, gênero, classe social, religião, orientação
@@ -80,27 +100,27 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="p-10 px-10">
+        <section class="p-10 px-10">
             <div class="bg-marrombgtexto-100 rounded-xl">
-                <h2 class="text-laranjasubtitulos-100 font-titulos text-4xl text-center py-8 pl-4">POR QUE A
+                <h2 class="text-laranjasubtitulos-100 font-titulos text-6xl text-center py-8 pl-4 shadow-xl">POR QUE A
                     REPRESENTATIVIDADE É IMPORTANTE?</h2>
             </div>
 
             <div class="flex justify-around mt-8">
                 <div class="flex flex-col gap-8 font-corpo">
-                    
+
                     <!-- 1 -->
-                    <div class="bg-footer text-laranjaapagado rounded-xl text-2xl font-corpo">
+                    <div class="bg-footer text-laranjaapagado rounded-xl text-xl font-corpo shadow-xl">
                         <div class="p-6">
                             <p class="text-amareloapagado">Combate à estereótipos e preconceitos</p><br>
                             <p>A representatividade permite a desconstrução de estigmas e ideias equivocadas.</p>
                         </div>
                     </div>
-                  
+
                     <!-- 2 -->
-                    <div class="bg-footer text-laranjaapagado rounded-xl text-2xl font-corpo">
+                    <div class="bg-footer text-laranjaapagado rounded-xl text-xl font-corpo">
                         <div class="p-6">
                             <p class="text-amareloapagado">Combate à estereótipos e preconceitos</p><br>
                             <p>A representatividade permite a desconstrução de estigmas e ideias equivocadas.</p>
@@ -108,7 +128,7 @@
                     </div>
 
                     <!-- 3 -->
-                    <div class="bg-footer text-laranjaapagado rounded-xl text-2xl font-corpo">
+                    <div class="bg-footer text-laranjaapagado rounded-xl text-xl font-corpo shadow-xl">
                         <div class="p-6">
                             <p class="text-amareloapagado">Combate à estereótipos e preconceitos</p><br>
                             <p>A representatividade permite a desconstrução de estigmas e ideias equivocadas.</p>
@@ -116,7 +136,7 @@
                     </div>
 
                     <!-- 4 -->
-                    <div class="bg-footer text-laranjaapagado rounded-xl text-2xl font-corpo">
+                    <div class="bg-footer text-laranjaapagado rounded-xl text-xl font-corpo shadow-xl">
                         <div class="p-6">
                             <p class="text-amareloapagado">Combate à estereótipos e preconceitos</p><br>
                             <p>A representatividade permite a desconstrução de estigmas e ideias equivocadas.</p>
@@ -124,7 +144,7 @@
                     </div>
 
                     <!-- 5 -->
-                    <div class="bg-footer text-laranjaapagado rounded-xl text-2xl font-corpo">
+                    <div class="bg-footer text-laranjaapagado rounded-xl text-xl font-corpo shadow-xl">
                         <div class="p-6">
                             <p class="text-amareloapagado">Combate à estereótipos e preconceitos</p><br>
                             <p>A representatividade permite a desconstrução de estigmas e ideias equivocadas.</p>
@@ -134,13 +154,179 @@
 
                 <!-- imagem -->
                 <div>
-                    <img class="size-160 rounded-xl" src="img/folha.png" alt="">
+                    <img class="size-160 rounded-xl ml-8 shadow-xl" src="img/folha.png" alt="">
                 </div>
                 <div>
                     <img class="" src="" alt="">
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-12 text-texto">
+            <div class="text-center mb-12 bg-marrombgtexto-100 py-8">
+                <h2 class="text-5xl font-titulos text-laranjasubtitulos-100 tracking-widest">LINHA DO TEMPO: A HISTÓRIA
+                    AFROBRASILEIRA</h2>
+            </div>
+
+            <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="border-2-2 absolute border-opacity-20 border-laranjasubtitulos-100 h-full border"
+                    style="left: 50%"></div>
+
+                <!-- Item Esquerda -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">1500</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Chegada dos portugueses
+                            no Brasil:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            Os Portugueses chegaram ao Brasil devido ao seu interesse econômico nas terras Indígenas,
+                            expansão marítima para novas rotas de comércio com a Índia e etc.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Direita -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">1535</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Chegada do primeiro Navio
+                            Negreiro:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            Marca o início da escravidão africana no Brasil, com a chegada forçada de indivíduos
+                            arrancados de suas terras e culturas para trabalho desumano.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Esquerda -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">1550</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Início da escravidão
+                            africana no Brasil:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            A escravidão africana se institucionaliza, tornando-se a base da economia colonial
+                            brasileira, impulsionando o tráfico transatlântico de escravos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Direita -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">XVI a XIX</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">4 milhões de
+                            escravizados:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            Durante mais de três séculos, o Brasil recebeu o maior número de africanos escravizados nas
+                            Américas, cerca de 4 milhões de pessoas. Brutalmente exploradas e desumanizadas, elas foram
+                            fundamentais na construção do país, mas tiveram sua contribuição apagada, deixando
+                            cicatrizes profundas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Esquerda -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">13/05/88</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Sanção da Lei Áurea:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            Abolição formal da escravidão, mas sem políticas de inclusão ou reparação. A população negra
+                            ficou marginalizada, sem acesso à terra, educação e trabalho.
+                        </p>
+                    </div>
+                </div>
+                <!-- Item Direita -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">1889</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Início do apagamento da
+                            história negra:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            A história e as contribuições da população negra passaram a serem apagadas, com a cultura
+                            africana minimizada e estereótipos perpetuados pela narrativa oficial.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Esquerda -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">XX</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Apagamento Cultural e
+                            Silenciamento:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            O apagamento cultural persistiu: manifestações africanas foram marginalizadas e artistas
+                            negros enfrentaram preconceito e silenciamento.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Direita -->
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">2014</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Instituição de
+                            autodeclaração racial:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            Marco essencial para o reconhecimento da identidade negra, fortalecendo a autoidentificação
+                            e a luta por políticas públicas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Esquerda -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-marrombgtexto-100 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+                    </div>
+                    <div class="order-1 bg-marrombgtexto-100 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <p class="font-bold text-laranjasubtitulos-100 text-3xl font-serif-display">ATUAL</p>
+                        <h3 class="font-bold text-amareloapagado text-xl mb-3 font-serif-body">Silenciamento e
+                            embranquecimento:</h3>
+                        <p class="text-base leading-snug tracking-wide text-texto text-opacity-100 font-corpo">
+                            Apesar dos avanços, o racismo estrutural persiste em várias esferas, e a luta por igualdade
+                            e reconhecimento continua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
@@ -154,17 +340,17 @@
                     <p class="text-amarelo-100 text-2xl font-medium pb-9">© All rights reserveds</p>
                 </div>
             </div>
-            <div class="flex flex-col py-15">
+            <div class="flex flex-col py-12">
                 <div class="flex gap-5 text-amarelo-100 hover:marker ">
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200"><a
+                    <button class="hover:text-white text-4xl transition-all delay-75 duration-200"><a
                             href="historia.html">História</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-4xl transition-all delay-75 duration-200 "><a
                             href="arte.html">Arte</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-4xl transition-all delay-75 duration-200 "><a
                             href="politica.html">Política</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-4xl transition-all delay-75 duration-200 "><a
                             href="religiao.html">Religião</a></button>
-                    <button class="hover:text-white text-4xl transition-all delay-150 duration-200 "><a
+                    <button class="hover:text-white text-4xl transition-all delay-75 duration-200 "><a
                             href="contato.html">Contatos</a></button>
                 </div>
 
