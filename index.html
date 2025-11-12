@@ -27,11 +27,15 @@
                         'footer': '#441907',
                         'laranjaapagado': '#ae653c',
                         'amareloapagado': '#f8b936',
+                        'marromsubtitulo': '#927e5c',
+                        'amareloclaro': '#e3cca3',
+                        'marromtempo': '#927429',
                     },
                     fontFamily: {
                         'titulos': ['Britannic W01 Medium Compressed', 'sans-serif'],
                         'corpo': ['Cormorant Garamond', 'sans-serif'],
                         'serif-body': ['"Lora"', 'serif'],
+
                     },
                     spacing: {
                         '135': '33.75rem',
@@ -49,7 +53,7 @@
 </head>
 
 <body>
-    <header class="bg-[url('img/header.jpg')] bg-cover bg-no-repeat w-full h-160">
+    <header class="bg-[url('img/header.jpg')] bg-cover bg-no-repeat w-full h-screen">
         <div class="bg-header-800 bg-opacity-20 w-full h-full flex flex-col justify-center items-center">
             <div>
                 <img src="img/logo.png" alt="">
@@ -71,8 +75,8 @@
         </div>
     </header>
     <main>
-        <section class="bg-laranjaapagado">
-            <div class="flex justify-around px-10 pt-12 py-10">
+        <section class="bg-laranjaapagado position-relative">
+            <div class="flex justify-around px-10 pt-12">
                 <div class=" h-auto w-135 flex flex-col gap-8">
                     <div>
                         <h2 class="text-amareloapagado font-titulos text-6xl text-center">
@@ -95,6 +99,7 @@
             </div>
         </section>
 
+
         <section class="bg-cianoescuro">
             <div class="flex flex-col place-items-center justify-items-center px-10 pt-12 py-10">
                 <div class="h-auto w-auto gap-6">
@@ -110,15 +115,208 @@
                         </div>
                         <div class="flex items-center justify-center py-8"><img class=" rounded-xl h-80 w-85"
                                 src="img/kizomba.jpg" alt=""></div>
-                                <div class="justify-center items-center py-8"><p class="text-xl text-bege font-corpo text-center">A Zambô é uma ONG que promove atividades culturais e educativas para valorizar a cultura negra no Litoral Norte e combater o racismo.
- Entre suas ações, destaca-se o evento anual “Kizomba”, realizado no Dia da Consciência Negra (20 de novembro), com caminhadas, apresentações culturais, culinária afro e artesanato.</p></div>
+                        <div class="justify-center items-center py-8">
+                            <p class="text-xl text-bege font-corpo text-center">A Zambô é uma ONG que promove atividades
+                                culturais e educativas para valorizar a cultura negra no Litoral Norte e combater o
+                                racismo.
+                                Entre suas ações, destaca-se o evento anual “Kizomba”, realizado no Dia da Consciência
+                                Negra (20 de novembro), com caminhadas, apresentações culturais, culinária afro e
+                                artesanato.</p>
+                        </div>
                     </div>
                 </div>
         </section>
 
+
+
+
+        <section class=" bg-amareloclaro min-h-screen flex flex-col">
+
+            <section class="bg-amareloclaro py-16">
+                <div class="max-w-6xl mx-auto px-6 md:px-10">
+
+                    <!-- Título -->
+                    <div class="text-center mb-12">
+                        <h2 class=" text-laranjaapagado text-7xl uppercase tracking-wide font-titulos">
+                            LINHA DO TEMPO:
+                        </h2>
+                        <p class=" text-marromsubtitulo text-7xl  mt-2 font-titulos">
+                            A HISTÓRIA AFROBRASILEIRA
+                        </p>
+                    </div>
+
+                    <section class="bg-amareloclaro min-h-screen flex flex-col py-16">
+                        <div class="max-w-6xl mx-auto px-6 md:px-10">
+
+                            <!-- GRID DAS DUAS COLUNAS -->
+                            <div class="grid md:grid-cols-2 gap-12 border-t-2 border-marromtempo pt-10">
+
+                                <!-- COLUNA ESQUERDA -->
+                                <div class="space-y-12">
+
+                                    <!-- 1500 -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <div class="max-w-[80%]">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Chegada dos portugueses no Brasil:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                Os Portugueses chegaram ao Brasil devido ao seu interesse econômico nas
+                                                terras indígenas,
+                                                expansão marítima para novas rotas de comércio com a Índia e etc.
+                                            </p>
+                                        </div>
+                                        <span class="text-6xl ml-4 font-titulos text-laranjaapagado">1500</span>
+                                    </div>
+
+                                    <!-- 1550 -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <div class="max-w-[80%]">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Início da escravidão africana no Brasil:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                A escravidão africana se institucionaliza, tornando-se a base da
+                                                economia colonial brasileira,
+                                                impulsionando o tráfico transatlântico de escravos.
+                                            </p>
+                                        </div>
+                                        <span class="text-6xl ml-4 font-titulos text-laranjaapagado">1550</span>
+                                    </div>
+
+                                    <!-- 13/05/88 -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <div class="max-w-[80%]">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Sanção da Lei Áurea:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                Abolição formal da escravidão, mas sem políticas de inclusão ou
+                                                reparação.
+                                                A população negra ficou marginalizada, sem acesso à terra, educação e
+                                                trabalho.
+                                            </p>
+                                        </div>
+                                        <span class="text-6xl ml-4 font-titulos text-laranjaapagado">13/05/88</span>
+                                    </div>
+
+                                    <!-- XX -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <div class="max-w-[80%]">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Apagamento Cultural e Silenciamento:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                O apagamento cultural persistiu: manifestações africanas foram
+                                                marginalizadas e artistas negros
+                                                enfrentaram exclusão e preconceito.
+                                            </p>
+                                        </div>
+                                        <span class="text-6xl ml-4 font-titulos text-laranjaapagado">XX</span>
+                                    </div>
+
+                                    <!-- ATUAL -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <div class="max-w-[80%]">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Silenciamento e embranquecimento:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                Apesar dos avanços, o racismo estrutural persiste em várias esferas,
+                                                e a luta por igualdade e reconhecimento continua.
+                                            </p>
+                                        </div>
+                                        <span class="text-6xl ml-4 font-titulos text-laranjaapagado">ATUAL</span>
+                                    </div>
+
+                                </div> <!-- fim da coluna esquerda -->
+
+
+
+                                <!-- COLUNA DIREITA -->
+                                <div class="space-y-12 border-l-2 border-marromtempo pl-8">
+
+                                    <!-- 1535 -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <span class="text-6xl mr-4 font-titulos text-laranjaapagado">1535</span>
+                                        <div class="max-w-[80%] text-right">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Chegada do primeiro Navio Negreiro:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                Marca o início da escravidão africana no Brasil, com a chegada forçada
+                                                de indivíduos arrancados
+                                                de suas terras e culturas para trabalho desumano.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- XVI a XIX -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <span class="text-6xl mr-4 font-titulos text-laranjaapagado">XVI a XIX</span>
+                                        <div class="max-w-[80%] text-right">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                4 milhões de escravizados:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                Durante mais de três séculos, o Brasil recebeu o maior número de
+                                                africanos escravizados nas Américas,
+                                                cerca de 4 milhões de pessoas. Brutalmente exploradas, elas foram
+                                                fundamentais na construção do país,
+                                                mas tiveram sua contribuição apagada.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 1889 -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <span class="text-6xl mr-4 font-titulos text-laranjaapagado">1889</span>
+                                        <div class="max-w-[80%] text-right">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Início do apagamento da história negra:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                A história e as contribuições da população negra passaram a ser
+                                                apagadas,
+                                                com a cultura africana minimizada e estereótipos perpetuados pela
+                                                narrativa oficial.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2014 -->
+                                    <div
+                                        class="flex justify-between items-start hover:scale-110 transition-transform duration-300">
+                                        <span class="text-6xl mr-4 font-titulos text-laranjaapagado">2014</span>
+                                        <div class="max-w-[80%] text-right">
+                                            <h3 class="text-2xl text-marromtempo font-bold font-corpo">
+                                                Instituição de autodeclaração racial:
+                                            </h3>
+                                            <p class="text-marromsubtitulo mt-1 text-justify leading-relaxed">
+                                                Marco essencial para o reconhecimento da identidade negra,
+                                                fortalecendo a autoidentificação e a luta por políticas públicas.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- fim da coluna direita -->
+
+                            </div> <!-- fim do grid -->
+                        </div>
+                    </section>
+
+
     </main>
 
-    <footer class="bg-laranjaapagado font-titulos">
+    <footer class="bg-laranjaapagado font-titulos ">
         <div class="flex flex-row gap-4 justify-around">
             <div class="flex flex-col">
                 <div>
