@@ -76,15 +76,15 @@
     </header>
     <main>
         <section class="bg-laranjaapagado position-relative">
-            <div class="flex justify-around px-10 pt-12">
+            <div class="flex justify-around px-10 pt-12 pb-6">
                 <div class=" h-auto w-135 flex flex-col gap-8">
-                    <div>
+                    <div class="">
                         <h2 class="text-amareloapagado font-titulos text-6xl text-center">
                             Sobre Nós
                         </h2>
                     </div>
-                    <div>
-                        <p class="text-white text-3xl font-corpo">O AfroAscende é um projeto educativo que promove a
+                    <div class="">
+                        <p class="text-white text-2xl font-corpo">O AfroAscende é um projeto educativo que promove a
                             representatividade afro-brasileira, abordando temas como história, cultura, religião,
                             política e identidade local.
 
@@ -94,11 +94,10 @@
                     </div>
                 </div>
                 <div>
-                    <img class="rounded-xl h-135 w-auto" src="img/sobrenos.png" alt="">
+                    <img class="rounded-xl gap-8" src="img/sobrenos.png" width="325" alt="">
                 </div>
             </div>
         </section>
-
 
         <section class="bg-cianoescuro">
             <div class="flex flex-col place-items-center justify-items-center px-10 pt-12 py-10">
@@ -109,13 +108,86 @@
                         </div>
                     </div>
 
+
+                    <div class="w-full max-w-3xl mx-auto py-8">
+                        <div id="carousel" class=" relative overflow-hidden rounded-lg bg-white shadow-lg">
+                            <!-- Slides wrapper -->
+                            <div id="slides" class="flex transition-transform duration-500 ease-in-out">
+                                <!-- Slide 1 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="img/carrossel1.jpg" alt="" class="w-full h-64 sm:h-80 object-cover" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                                        <div class="text-white">
+                                            <p class="text-sm sm:text-base opacity-90 text-bege font-corpo text-center">
+                                                Representatividade é a garantia da existência de voz, visibilidade e
+                                                participação ativa de diferentes grupos sociais, que podem ser baseados
+                                                em raça, gênero, classe social, religião, orientação sexual ou
+                                                deficiência, em espaços importantes da sociedade, como política, mídia,
+                                                educação, cultura e mercado de trabalho.
+                                                É essencial assegurar que a representatividade seja respeitosa, profunda
+                                                e digna de cada indivíduo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="img/carrossel2.jpg" alt="" class="w-full h-64 sm:h-80 object-cover" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                                        <div class="text-white">
+                                            <p class="text-sm sm:text-base opacity-90 text-bege font-corpo text-center">
+                                                Falar sobre representatividade é essencial para combater estereótipos e
+                                                preconceitos, fortalecer a autoestima e o sentimento de pertencimento,
+                                                torna a sociedade mais justa e inclusiva, inspira novas gerações a
+                                                acreditarem em seu potencial e reflete a verdadeira diversidade do mundo
+                                                em que vivemos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="w-full flex-shrink-0 relative">
+                                    <img src="img/carrossel3.png" alt="" class="w-full h-64 sm:h-80 object-cover" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                                        <div class="text-white">
+                                            <p class="text-sm sm:text-base opacity-90 text-bege font-corpo text-center">
+                                                A representatividade afro-brasileira acontece quando pessoas negras são
+                                                valorizadas e têm espaço em áreas como a mídia, política, educação e
+                                                cultura. Exemplos disso são artistas como Taís Araújo e Lázaro Ramos, a
+                                                Lei 10.639/2003 nas escolas e o trabalho de ativistas como Djamila
+                                                Ribeiro. Esses casos mostram a importância de ver e ouvir vozes negras,
+                                                promovendo igualdade e respeito à diversidade.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <button id="prev" aria-label="Anterior"
+                                class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white px-2 py-1 rounded-full shadow">
+                                ‹
+                            </button>
+                            <button id="next" aria-label="Próximo"
+                                class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white px-2 py-1 rounded-full shadow">
+                                ›
+                            </button>
+
+                            <!-- Indicators -->
+                            <div id="dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2"></div>
+                        </div>
+                    </div>
+
                     <div>
                         <div class="justify-items-center">
                             <h2 class="text-cianoclaro font-titulos text-6xl">PROJETO ZAMBO</h2>
                         </div>
-                        <div class="flex items-center justify-center py-8"><img class=" rounded-xl h-80 w-85"
+                        <div class="flex items-center justify-center py-8"><img class=" rounded-xl" width="700"
                                 src="img/kizomba.jpg" alt=""></div>
-                        <div class="justify-center items-center py-8">
+                        <div class="justify-center items-center py-8 size-auto max-w-3xl">
                             <p class="text-xl text-bege font-corpo text-center">A Zambô é uma ONG que promove atividades
                                 culturais e educativas para valorizar a cultura negra no Litoral Norte e combater o
                                 racismo.
@@ -126,9 +198,6 @@
                     </div>
                 </div>
         </section>
-
-
-
 
         <section class=" bg-amareloclaro min-h-screen flex flex-col">
 
@@ -335,6 +404,8 @@
                 </div>
             </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
