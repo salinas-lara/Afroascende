@@ -7,8 +7,6 @@
       const dotsContainer = document.getElementById('dots');
       let index = 0;
       const total = slides.length;
-      let autoplayInterval = 4000;
-      let timer = null;
 
       // Cria indicadores (dots)
       slides.forEach((_, i) => {
@@ -21,7 +19,7 @@
       const dots = Array.from(dotsContainer.children);
 
       function update() {
-        slidesEl.style.transform = `translateX(-${index * 100}%)`;
+        slidesEl.style.transform = `translateX(-${index * 104}%)`;
         dots.forEach((d, i) => {
           d.classList.toggle('scale-125', i === index);
           d.classList.toggle('bg-white', i === index);
@@ -41,15 +39,6 @@
         if (e.key === 'ArrowLeft') { prev(); resetTimer(); }
         if (e.key === 'ArrowRight') { next(); resetTimer(); }
       });
-
-
-      // Pause on hover/focus
-      const carousel = document.getElementById('carousel');
-      carousel.addEventListener('mouseenter', stopTimer);
-      carousel.addEventListener('mouseleave', startTimer);
-      carousel.addEventListener('focusin', stopTimer);
-      carousel.addEventListener('focusout', startTimer);
-
       // Inicializa
       update();
       startTimer();
