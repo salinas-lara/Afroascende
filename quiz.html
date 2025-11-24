@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/ESPIRAL.png" type="image/png">
-    <title>Arte - Afroascende</title>
+    <title>Afroascende - Religião</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +18,26 @@
             theme: {
                 extend: {
                     colors: {
-                        'header-800': '#a44819',
+                        'bege': '#e3cca3',
                         'amarelo-100': '#f8b936',
-                        'marrombg-100': '#54200a',
-                        'marrombgtexto-100': '#441907',
+                        'cianoescuro': '#033232',
+                        'cianoclaro': '#058282',
                         'laranjasubtitulos-100': '#ab8a38',
                         'texto': '#bba37a',
                         'footer': '#441907',
-                        'laranjaapagado': '#927e5c',
-                        'amareloapagado': '#bba37a',
+                        'laranjaapagado': '#ae653c',
+                        'amareloapagado': '#f8b936',
+                        'marromsubtitulo': '#927e5c',
+                        'amareloclaro': '#e3cca3',
+                        'marromtempo': '#927429',
+                        'amarelopastel': '#fffdd0',
+
                     },
                     fontFamily: {
                         'titulos': ['Britannic W01 Medium Compressed', 'sans-serif'],
-                        'corpo': ['Agrandir', 'sans-serif'],
-                        'serif-display': ['"Cormorant Garamond"', 'serif'],
+                        'corpo': ['Cormorant Garamond', 'sans-serif'],
                         'serif-body': ['"Lora"', 'serif'],
+
                     },
                     spacing: {
                         '135': '33.75rem',
@@ -43,66 +49,83 @@
     </script>
     <style>
         @import url(https://db.onlinewebfonts.com/c/41eb2c8877eac89478d806875aa9327b?family=Britannic+W01+Medium+Compressed);
-        @import url(https://db.onlinewebfonts.com/c/1dc7840abb13fcda12aa8d1cb21fb832?family=Agrandir);
+        @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap);
     </style>
+
 </head>
+
 <body>
-    <header id="header" class="bg-header-800 py-9 font-titulos">
-        <div class="flex flex-row gap-4 justify-around ">
-            <div class="flex flex-row">
-                <div class="size-16 py-8 mr-4"><img src="img/ESPIRAL.png" alt="" class=""></div>
-                <h1 class="text-amarelo-100 text-8xl font-medium py-2">AFROASCENDE</h1>
-            </div>
-            <div class="flex flex-col">
-                <div class="flex gap-5 py-7 text-amarelo-100 hover:marker">
-                    
-                    <button class="hover:text-white hover:underline text-5xl transition-all delay-75 duration-200 "><a
-                            href="index.html">Início</a></button>
-                    <button class="hover:text-white hover:underline text-5xl transition-all delay-75 duration-200 "><a
-                            href="arte.html">Arte</a></button>
-                    <button class="hover:text-white hover:underline text-5xl transition-all delay-75 duration-200 "><a
-                            href="politica.html">Política</a></button>
-                    <button class="hover:text-white hover:underline text-5xl transition-all delay-75 duration-200 "><a
-                            href="religiao.html">Religião</a></button>
-                    <button class="hover:text-white hover:underline text-5xl transition-all delay-75 duration-200 "><a
-                            href="contato.html">Contatos</a></button>
+    <header class="bg-[url('img/headerquiz.png')] bg-cover bg-center bg-no-repeat w-full h-screen relative">
+
+        <div class="bg-black/40 w-full h-full relative flex flex-col justify-end pb-12 pl-16">
+
+            <div class="z-20 font-titulos flex flex-col items-center w-max">
+
+                <img src="/img/logo.png" class="h-32 w-auto mb-2" alt="Logo AfroAscende">
+
+                <h1 class="text-amareloapagado text-8xl uppercase">
+                    QUIZ
+                </h1>
+
+                <div class="flex gap-6 pt-4 uppercase tracking-wider text-3xl">
+                    <a href="index.html"
+                        class="text-bege hover:text-amareloapagadoapagado transition-colors duration-200">INÍCIO</a>
+                    <a href="arte.html"
+                        class="text-bege hover:text-amareloapagado transition-colors duration-200">ARTE</a>
+                    <a href="religiao.html"
+                        class="text-bege hover:text-amareloapagado transition-colors duration-200">RELIGIÃO</a>
+                    <a href="politica.html"
+                        class="text-bege hover:text-amareloapagado transition-colors duration-200">POLÍTICA</a>
+
+
                 </div>
 
             </div>
+
         </div>
+
+
     </header>
 
 
 
 
-    <footer class="bg-footer font-titulos">
-        <div class="flex flex-row gap-4 justify-around ">
-            <div class="flex flex-col">
-                <div>
-                    <h3 class="text-amarelo-100 text-6xl font-medium pt-9">AFROASCENDE</h3>
-                </div>
-                <div>
-                    <p class="text-amarelo-100 text-2xl font-medium pb-9">© All rights reserveds</p>
-                </div>
-            </div>
-            <div class="flex flex-col py-12">
-                <div class="flex gap-5 text-amarelo-100 hover:marker ">
-                    
-                    <button class="hover:text-white hover:underline text-4xl transition-all delay-75 duration-200 "><a
-                            href="index.html">Início</a></button>
-                    <button class="hover:text-white hover:underline text-4xl transition-all delay-75 duration-200"><a
-                             href="arte.html">Arte</a></button>
-                    <button class="hover:text-white hover:underline text-4xl transition-all delay-75 duration-200 "><a
-                            href="politica.html">Política</a></button>
-                    <button class="hover:text-white hover:underline text-4xl transition-all delay-75 duration-200 "><a
-                            href="religiao.html">Religião</a></button>
-                    <button class="hover:text-white hover:underline text-4xl transition-all delay-75 duration-200 "><a
-                            href="contato.html">Contatos</a></button>
-                    
-                </div>
 
+    <footer class="bg-laranjaapagado py-6">
+        <div class="flex justify-between items-center w-full mx-auto px-10">
+            
+            <div class="flex items-center gap-4">
+                <img 
+                    class="w-14 h-14 object-contain" 
+                    src="img/logo.png" 
+                    alt="Logo Afroascende"
+                >
+                <span class="text-amareloapagado font-titulos text-5xl tracking-widest uppercase shadow-text">
+                    AFROASCENDE
+                </span>
             </div>
+    
+            <div class="flex items-center space-x-8 text-amareloclaro"> 
+                
+                <a href="#" class="text-amareloclaro hover:text-amareloapagado transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h3V2h-3a5 5 0 0 0-5 5v2.5H7.75v4H11V22h3v-8.5z"/>
+                    </svg>
+                </a>
+                
+                <a href="#" class="text-amareloclaro hover:text-amareloapagado transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+                    </svg>
+                </a>
+            </div>
+            
         </div>
     </footer>
+
+
 </body>
+
 </html>
