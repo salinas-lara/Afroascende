@@ -1,47 +1,69 @@
-// a merda do carrossel
-    (function () {
-      const slidesEl = document.getElementById('slides');
-      const slides = Array.from(slidesEl.children);
-      const prevBtn = document.getElementById('prev');
-      const nextBtn = document.getElementById('next');
-      const dotsContainer = document.getElementById('dots');
-      let index = 0;
-      const total = slides.length;
+// --- CAROUSEL FUNCTIONALITY ---
 
-      // Cria indicadores (dots)
-      slides.forEach((_, i) => {
-        const dot = document.createElement('button');
-        dot.className = 'w-3 h-3 rounded-full bg-white/60 hover:bg-white';
-        dot.setAttribute('aria-label', 'Ir para slide ' + (i + 1));
-        dot.addEventListener('click', () => goTo(i));
-        dotsContainer.appendChild(dot);
-      });
-      const dots = Array.from(dotsContainer.children);
+const slidesContainer = document.getElementById('slides');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const dotsContainer = document.getElementById('dots');
+const dynamicTextElement = document.getElementById('dynamic-carousel-text');
 
-      function update() {
-        slidesEl.style.transform = `translateX(-${index * 104}%)`;
-        dots.forEach((d, i) => {
-          d.classList.toggle('scale-125', i === index);
-          d.classList.toggle('bg-white', i === index);
-          d.classList.toggle('bg-white/60', i !== index);
+let currentSlide = 0;
+
+// TEXTS TRANSLATED TO ENGLISH
+const carouselTexts = [
+    "Representation is crucial for the identity, self-esteem, and sense of belonging of marginalized individuals and groups. It reflects the real diversity in society, challenging limited narratives.",
+    "Having Black references in media, politics, and art validates the experiences and aspirations of Black youth, combating racism by showcasing the success and complexity of Afro-Brazilian identity.",
+    "Today, the movement for representation is growing, highlighting figures in various areas who inspire and empower. This includes political leaders, artists, and digital influencers who celebrate Black culture."
+];
+
+const totalSlides = carouselTexts.length;
+
+function updateCarousel() {
+    // 1. Update the slides position
+    const offset = -currentSlide * 100;
+    slidesContainer.style.transform = `translateX(${offset}%)`;
+
+    // 2. Update the dynamic text below the carousel
+    dynamicTextElement.textContent = carouselTexts[currentSlide];
+
+    // 3. Update the navigation dots
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        if (index === currentSlide) {
+            dot.classList.add('bg-amarelo-100'); // Active color
+            dot.classList.remove('bg-white/50'); // Inactive color
+        } else {
+            dot.classList.remove('bg-amarelo-100');
+            dot.classList.add('bg-white/50');
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+// Initial setup for dots and first text
+function initializeDots() {
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot', 'h-2', 'w-2', 'rounded-full', 'cursor-pointer', 'transition-colors');
+        dot.addEventListener('click', () => {
+            currentSlide = i;
+            updateCarousel();
         });
-      }
+        dotsContainer.appendChild(dot);
+    }
+}
 
-      function next() { index = (index + 1) % total; update(); }
-      function prev() { index = (index - 1 + total) % total; update(); }
-      function goTo(i) { index = (i + total) % total; update(); }
+// Event listeners for navigation
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
 
-      prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
-      nextBtn.addEventListener('click', () => { next(); resetTimer(); });
-
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') { prev(); resetTimer(); }
-        if (e.key === 'ArrowRight') { next(); resetTimer(); }
-      });
-      // Inicializa
-      update();
-      startTimer();
-      // Ajuste responsivo: garante largura correta em redimensionamento
-      window.addEventListener('resize', update);
-    })();
+// Initialize the carousel on page load
+initializeDots();
+updateCarousel();
