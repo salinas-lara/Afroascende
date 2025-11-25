@@ -10,9 +10,9 @@ let currentSlide = 0;
 
 // TEXTS TRANSLATED TO ENGLISH
 const carouselTexts = [
-    "Representatividade é a garantia da existência de voz, visibilidade e participação ativa de diferentes grupos sociais, que podem ser baseados em raça, gênero, classe social, religião, orientação sexual ou deficiência, em espaços importantes da sociedade, como política, mídia, educação, cultura e mercado de trabalho. É essencial assegurar que a representatividade seja respeitosa, profunda e digna de cada indivíduo.",
-    "Falar sobre representatividade é essencial para combater estereótipos e preconceitos, fortalecer a autoestima e o sentimento de pertencimento, torna a sociedade mais justa e inclusiva, inspira novas gerações a acreditarem em seu potencial e reflete a verdadeira diversidade do mundo em que vivemos.",
-    "A representatividade afro-brasileira acontece quando pessoas negras são valorizadas e têm espaço em áreas como a mídia, política, educação e cultura. Exemplos disso são artistas como Taís Araújo e Lázaro Ramos, a Lei 10.639/2003 nas escolas e o trabalho de ativistas como Djamila Ribeiro. Esses casos mostram a importância de ver e ouvir vozes negras, promovendo igualdade e respeito à diversidade."
+    "Representation is crucial for the identity, self-esteem, and sense of belonging of marginalized individuals and groups. It reflects the real diversity in society, challenging limited narratives.",
+    "Having Black references in media, politics, and art validates the experiences and aspirations of Black youth, combating racism by showcasing the success and complexity of Afro-Brazilian identity.",
+    "Today, the movement for representation is growing, highlighting figures in various areas who inspire and empower. This includes political leaders, artists, and digital influencers who celebrate Black culture."
 ];
 
 const totalSlides = carouselTexts.length;
