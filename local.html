@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="scroll-smooth" lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -55,7 +55,7 @@
 </head>
 
 <body>
-    <header class="bg-[url('img/headerquiz.png')] bg-cover bg-center bg-no-repeat w-full h-screen relative">
+    <header id="header" class="bg-[url('img/headerquiz.png')] bg-cover bg-center bg-no-repeat w-full h-screen relative">
 
         <div class="bg-black/40 w-full h-full relative flex flex-col justify-end pb-12 pl-16">
 
@@ -173,12 +173,108 @@
             </div>
 
         </section class="bg-amareloclaro">
-        <div class="bg-amareloclaro py-12" >
-                <h2 class="font-titulos text-center text-laranjaapagado text-7xl">quiz</h2>
-                
-                <h2 class="font-titulos text-center text- text-2xl text-marromsubtitulo  py-10 px-56" >Agora que você já explorou o conteúdo do nosso site, que tal testar o que aprendeu? Criamos um quiz com 7 perguntas baseadas no que você acabou de ler, uma forma rápida e divertida de revisar e descobrir o quanto entendeu. Clique no link do quiz e veja se você realmente dominou o assunto.</h2>
-        </div>
 
+        <section id="quiz-section" class="bg-amareloclaro py-12">
+            <h2 class="font-titulos text-center text-laranjaapagado text-7xl">quiz</h2>
+
+            <div id="quiz-container" class="text-center py-10 px-10 md:px-56">
+                <h3 id="quiz-question" class="font-titulos text-3xl text-marromsubtitulo mb-6">Carregando pergunta...</h3>
+
+                <div id="quiz-options" class="flex flex-col gap-4">
+                    <!-- As opções serão geradas dinamicamente aqui -->
+                </div>
+
+                <button id="next-question" class="mt-6 bg-laranjaapagado text-white py-2 px-4 rounded hidden">Próxima Pergunta</button>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const quizData = [
+                    {
+                        question: "Qual é a importância da representatividade local?",
+                        options: [
+                            "Promover a cultura afro-brasileira.",
+                            "Aumentar o turismo na região.",
+                            "Criar novos negócios internacionais.",
+                            "Reduzir eventos culturais."],
+                        correct: 0
+                    },
+                    {
+                        question: "Qual evento celebra a Consciência Negra em Caraguatatuba?",
+                        options: [
+                            "Mais Bela Negra.",
+                            "Viagem Literária Afro-Brasileira.",
+                            "Kizomba da Consciência Negra.",
+                            "Dia da Consciência Negra em São Sebastião."],
+                        correct: 2
+                    },
+                    {
+                        question: "Qual cidade realiza o evento 'Mais Bela Negra'?",
+                        options: [
+                            "Caraguatatuba.",
+                            "São Sebastião.",
+                            "Ubatuba.",
+                            "Ilhabela."],
+                        correct: 2
+                    },
+                    {
+                        question: "O que é promovido pela Viagem Literária Afro-Brasileira?",
+                        options: [
+                            "A literatura afro-brasileira.",
+                            "A culinária afro-brasileira.",
+                            "O esporte afro-brasileiro.",
+                            "A música afro-brasileira."],
+                        correct: 0
+                    }
+                ];
+
+                let currentQuestionIndex = 0;
+                const quizContainer = document.getElementById('quiz-container');
+                const questionElement = document.getElementById('quiz-question');
+                const optionsContainer = document.getElementById('quiz-options');
+                const nextButton = document.getElementById('next-question');
+
+                function loadQuestion() {
+                    const currentQuestion = quizData[currentQuestionIndex];
+                    questionElement.textContent = currentQuestion.question;
+
+                    optionsContainer.innerHTML = '';
+                    currentQuestion.options.forEach((option, index) => {
+                        const button = document.createElement('button');
+                        button.textContent = option;
+                        button.className = 'bg-laranjaapagado text-white py-2 px-4 rounded hover:bg-laranjaapagado/80';
+                        button.addEventListener('click', () => handleAnswer(index));
+                        optionsContainer.appendChild(button);
+                    });
+                }
+
+                function handleAnswer(selectedIndex) {
+                    const currentQuestion = quizData[currentQuestionIndex];
+                    if (selectedIndex === currentQuestion.correct) {
+                        alert('Resposta correta!');
+                    } else {
+                        alert('Resposta incorreta. Tente novamente!');
+                    }
+
+                    if (currentQuestionIndex < quizData.length - 1) {
+                        nextButton.classList.remove('hidden');
+                    } else {
+                        questionElement.textContent = 'Parabéns! Você completou o quiz!';
+                        optionsContainer.innerHTML = '';
+                        nextButton.classList.add('hidden');
+                    }
+                }
+
+                nextButton.addEventListener('click', () => {
+                    currentQuestionIndex++;
+                    loadQuestion();
+                    nextButton.classList.add('hidden');
+                });
+
+                loadQuestion();
+            });
+        </script>
         <section>
 
         </section>
@@ -190,9 +286,9 @@
 
             <div class="flex items-center gap-4">
                 <img class="w-14 h-14 object-contain" src="img/logo.png" alt="Logo Afroascende">
-                <span class="text-amareloapagado font-titulos text-5xl tracking-widest uppercase shadow-text">
-                    AFROASCENDE
-                </span>
+                 <button class="text-amareloapagado font-titulos text-3xl sm:text-5xl tracking-widest uppercase shadow-text transition-all delay-75 duration-200 hover:text-white">
+                    <a href="#header">AFROASCENDE</a>
+                </button>
             </div>
 
             <div class="flex items-center space-x-8 text-amareloclaro">
@@ -215,7 +311,7 @@
 
         </div>
     </footer>
-
+   
 
 </body>
 
