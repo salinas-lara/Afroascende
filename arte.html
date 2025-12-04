@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/ESPIRAL.png" type="image/png">
     <title>Afroascende - Arte</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lora:wght@400;500&display=swap"
         rel="stylesheet">
-
 
     <script>
         tailwind.config = {
@@ -33,15 +33,11 @@
                         'amareloclaro': '#e3cca3',
                         'marromtempo': '#927429',
                         'amarelopastel': '#fffdd0',
-
-
                     },
                     fontFamily: {
                         'titulos': ['Britannic W01 Medium Compressed', 'sans-serif'],
                         'corpo': ['Cormorant Garamond', 'sans-serif'],
                         'serif-body': ['"Lora"', 'serif'],
-
-
                     },
                     spacing: {
                         '135': '33.75rem',
@@ -51,381 +47,281 @@
             },
         }
     </script>
+
     <style>
         @import url(https://db.onlinewebfonts.com/c/41eb2c8877eac89478d806875aa9327b?family=Britannic+W01+Medium+Compressed);
-        @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&display=swap);
     </style>
-
-
 </head>
 
-
 <body>
+
+    <!-- HEADER -->
     <header class="bg-[url('img/headerarte.png')] bg-cover bg-center bg-no-repeat w-full h-screen relative">
-
-
         <div class="bg-black/40 w-full h-full relative flex flex-col justify-end pb-12 pl-16">
 
-
             <div class="z-20 font-titulos flex flex-col items-center w-max">
-
-
                 <img src="img/logo.png" class="h-32 w-auto mb-2" alt="Logo AfroAscende">
 
-
-                <h1 class="text-amareloapagado text-8xl uppercase">
-                    ARTE
-                </h1>
-
-                
-                </section>
-
+                <h1 class="text-amareloapagado text-8xl uppercase">ARTE</h1>
 
                 <div class="flex gap-6 pt-4 uppercase tracking-wider text-3xl">
-                    <a href="index.html"
-                        class="text-bege hover:text-amareloapagadoapagado transition-colors duration-200">INÍCIO</a>
-                    <a href="religiao.html"
-                        class="text-bege hover:text-amareloapagado transition-colors duration-200">RELIGIÃO</a>
-                    <a href="politica.html"
-                        class="text-bege hover:text-amareloapagado transition-colors duration-200">POLÍTICA</a>
-
-
-
-
-                    <a href="local.html"
-                        class="text-bege hover:text-amareloapagado transition-colors duration-200">LOCAL</a>
+                    <a href="index.html" class="text-bege hover:text-amareloapagado transition">INÍCIO</a>
+                    <a href="religiao.html" class="text-bege hover:text-amareloapagado transition">RELIGIÃO</a>
+                    <a href="politica.html" class="text-bege hover:text-amareloapagado transition">POLÍTICA</a>
+                    <a href="local.html" class="text-bege hover:text-amareloapagado transition">LOCAL</a>
                 </div>
-
-
             </div>
 
-
         </div>
-
-
-
-
     </header>
-    <section class="bg-laranjaapagado h-screen" style="background-image: url('img/Fundo01.png'); background-size: contain; background-position: right; background-repeat: no-repeat;">
-        <div class="grid grid-cols-2">
-            <div class="h-screen">
-                <img src="img/HipHop.png" alt="" class="w-full h-full">
-            </div>
-            <div>
-       
-                <div class="mt-10 mb-8">
-                    <h2
-                        class="text-amareloapagado font-titulos text-8xl uppercase pb-1 flex justify-center">
-                        CULTURA HIP-HOP
-                    </h2>
-                </div>
-       
-                <div class="text-amarelopastel text-3xl font-serif-body text-justify leading-relaxed mx-16">
-                    <p>
-                        A cultura hip hop é muito presente quando o assunto é representatividade afro-brasileira. Mesmo sendo um movimento nascido na américa central, tem uma forte presença em território brasileiro.
-                    </p>
-                </div>
-                <div class="mt-8 mb-8">
-                    <h2
-                        class="text-amareloapagado font-titulos text-8xl uppercase pb-1 flex justify-center mt">
-                        LOCALMENTE
-                    </h2>
-                </div>
-       
-                <div class="text-amarelopastel text-3xl font-serif-body text-justify leading-relaxed mx-16">
-                    <p>
-                        Aqui no litoral temos aulas de alguns elementos dessa cultura como graffiti e break dance disponibilizados de forma gratuita através da Fundacc.
-                    </p>
-                    <p>
-                        Também temos organizações que fomentam como a Batalha de Deck <span class="text-[#e4c451]"><a href="https://www.instagram.com/batalhadodeck_/">(@batalhadodeck_)</a></span> a cultura Hip Hop através das batalhas de rima e rap.
-                    </p>
-                       
-                    </p>
-                </div>
-            </div>
+
+<!-- SEÇÃO HIP HOP -->
+<section 
+    class="bg-laranjaapagado min-h-screen w-full"
+    style="
+        background-image: url('img/Fundo01.png');
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    "
+>
+    <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+
+        <!-- IMAGEM -->
+        <div class="w-full h-full flex">
+            <img src="img/HipHop.png" 
+                 alt="Hip Hop"
+                 class="w-full h-auto object-cover">
         </div>
-       
+
+        <!-- TEXTO -->
+        <div class="pb-20 pt-10 flex flex-col justify-start">
+            
+            <!-- TÍTULO PRINCIPAL -->
+            <h2 class="text-amareloapagado font-titulos text-6xl md:text-8xl uppercase text-center">
+                CULTURA HIP-HOP
+            </h2>
+
+            <div class="text-amarelopastel text-3xl font-serif-body text-justify leading-relaxed mx-10 mt-6">
+                <p>
+                   A cultura hip-hop é um dos pilares da representatividade afro-brasileira. Mesmo tendo surgido no Caribe e se fortalecido nos EUA, ela encontrou no Brasil um terreno fértil. Aqui, virou voz e resistência, especialmente nas periferias.
+
+O hip-hop se expressa no rap, no graffiti, na dança, no DJ e até na moda. Artistas como Racionais MC’s, Sabotage e Emicida transformaram vivências negras em arte e consciência social. No fim, o hip-hop no Brasil não é só música: é identidade, crítica e força coletiva.
+                </p>
+            </div>
+
+            <!-- TÍTULO LOCALMENTE -->
+            <h2 class="text-amareloapagado font-titulos text-6xl md:text-8xl uppercase text-center mt-16">
+                LOCALMENTE
+            </h2>
+
+            <div class="text-amarelopastel text-3xl font-serif-body text-justify leading-relaxed mx-10 mt-6">
+                <p>
+                    Aqui no litoral temos aulas de graffiti e break dance pela Fundacc.
+                </p>
+
+                <p class="mt-4">
+                    Também temos organizações como a Batalha de Deck 
+                    <span class="text-[#e4c451]">
+                        <a href="https://www.instagram.com/batalhadodeck_/" target="_blank">@batalhadodeck_</a>
+                    </span> 
+                    que fortalecem a cultura.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- REPRESENTATIVIDADE MUSICAL -->
+    <section class="w-full bg-[#003434] pb-20 flex flex-col items-center justify-center">
+<div>
+        <h1 class="text-cianoclaro font-titulos text-center pt-10 text-7xl tracking-widest">
+            REPRESENTATIVIDADE MUSICAL
+        </h1>
+</div>
+
+        <div class="container flex justify-center gap-10 mt-10 flex-wrap">
+
+            <!-- Ebony -->
+            <div class="card" onclick="abrirModal('modal1')">
+                <img src="/img/Ebony wallpaper.jpg">
+                <div class="nome" style="color:#ffffff;">Ebony</div>
+            </div>
+
+            <!-- Liniker -->
+            <div class="card" onclick="abrirModal('modal2')">
+                <img src="/img/Liniker Lockscreens.jpg">
+                <div class="nome" style="color:#ffffff;">Liniker</div>
+            </div>
+
+            <!-- Urias -->
+            <div class="card" onclick="abrirModal('modal3')">
+                <img src="/img/URIAS - CARRANCA.jpg">
+                <div class="nome" style="color:#ffffff;">Urias</div>
+            </div>
+
+        </div>
+
     </section>
-    
 
+    <!-- MODAIS -->
+    <style>
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
+        .card {
+            width: 320px;
+            height: 480px;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform .3s;
+        }
 
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Representatividade Musical</title>
-<style>
-    body {
-        margin: 0;
-        background: #003434;
-        font-family: "Georgia", serif;
-        color: white;
-        text-align: center;
+        .nome {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            font-size: 50px;
+            font-style: italic;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+            text-align: center;
+        }
+    </style>
 
+    <!-- MODAL 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content bg-[#003434] text-white p-10 rounded-2xl relative max-w-xl">
+            <span class="close absolute right-4 top-2 text-3xl cursor-pointer"
+                onclick="fecharModal('modal1')">&times;</span>
 
-        /* CENTRALIZA TUDO */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+            <h2 class="text-3xl font-bold mb-4">Ebony</h2>
+            <p class="mb-4">
+                Milena Pinto de Oliveira, nascida na Baixada Fluminense,
+                mistura hip hop, pop e funk, falando sobre sexualidade e empoderamento.
+            </p>
 
-
-    h1 {
-        margin-top: 30px;
-        font-size: 45px;
-        letter-spacing: 3px;
-    }
-
-
-    .container {
-        width: 100%; /* garante alinhamento central */
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 40px;
-        padding: 20px;
-        flex-wrap: wrap;
-    }
-
-
-    .card {
-        width: 320px;
-        height: 480px;
-        border-radius: 25px;
-        overflow: hidden;
-        position: relative;
-        cursor: pointer;
-        transition: transform .3s;
-    }
-
-
-    .card:hover {
-        transform: scale(1.05);
-    }
-
-
-    .card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    .nome {
-        position: absolute;
-        bottom: 15px;
-        width: 100%;
-        font-size: 50px;
-        font-style: italic;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px #000;
-    }
-
-
-    /* MODAL */
-    .modal {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.75);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-
-
-    .modal-content {
-        background: rgb(1, 44, 35);
-        color: rgb(255, 255, 255);
-        border-radius: 20px;
-        max-width: 500px;
-        padding: 30px;
-        text-align: left;
-        font-family: Arial, sans-serif;
-        position: relative;
-    }
-
-
-    .close {
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        font-size: 28px;
-        cursor: pointer;
-    }
-</style>
-</head>
-<body>
-
-
-<h1>REPRESENTATIVIDADE MUSICAL</h1>
-
-
-<div class="container">
-
-
-    <!-- Ebony -->
-    <div class="card" onclick="abrirModal('modal1')">
-        <img src="/img/ebony-primeira-turne-km2-a-tour-datas-cidades-2.webp">
-        <div class="nome" style="color:#8e43ff;">Ebony</div>
+            <h3 class="text-2xl font-semibold mb-2">Hits</h3>
+            <ul class="space-y-2">
+                <li>Extraordinária</li>
+                <li>100 Mili</li>
+                <li>Pensamentos Intrusivos</li>
+                <li>Kia</li>
+                <li>Espero que Entendam</li>
+            </ul>
+        </div>
     </div>
 
+    <!-- MODAL 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content bg-[#003434] p-10 rounded-2xl relative text-white max-w-xl">
+            <span class="close absolute right-4 top-2 text-3xl cursor-pointer"
+                onclick="fecharModal('modal2')">&times;</span>
 
-    <!-- Liniker -->
-    <div class="card" onclick="abrirModal('modal2')">
-        <img src="/img/liniker-capa-2.webp">
-        <div class="nome" style="color:#f6d45c;">Liniker</div>
+            <h2 class="text-3xl font-bold mb-4">Liniker</h2>
+<p class="mb-4">
+    Liniker de Barros Ferreira Campos, nascida em Araraquara (SP),
+    mistura soul, MPB e R&B, trazendo vivências trans, afeto e identidade negra
+    com força e poesia.
+</p>
+
+<h3 class="text-2xl font-semibold mb-2">Hits</h3>
+<ul class="space-y-2">
+    <li>Baby 95</li>
+    <li>Intimidade</li>
+    <li>Psiu</li>
+    <li>Presente</li>
+    <li>Calmô</li>
+    <li>Zero</li>
+</ul>
+
+        </div>
     </div>
 
+    <!-- MODAL 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content bg-[#003434] p-10 rounded-2xl relative text-white max-w-xl">
+            <span class="close absolute right-4 top-2 text-3xl cursor-pointer"
+                onclick="fecharModal('modal3')">&times;</span>
 
-    <!-- Urias -->
-    <div class="card" onclick="abrirModal('modal3')">
-        <img src="/img/urias-lanca-novo-disco-carranca-1759873281077_v2_750x1.jpg.webp">
-        <div class="nome" style="color:#f5b07a;">Urias</div>
+            <h2 class="text-3xl font-bold mb-4">Urias</h2>
+<p class="mb-4">
+    Urias Santos do Carmo, nascida em Uberlândia (MG),
+    mistura house, pop eletrônico e estética experimental,
+    explorando vivências trans e liberdade corporal sem pedir permissão.
+</p>
+
+<h3 class="text-2xl font-semibold mb-2">Hits</h3>
+<ul class="space-y-2">
+    <li>Razor</li>
+    <li>Foi Mal</li>
+    <li>Diaba</li>
+    <li>Escorpião</li>
+    <li>Fúria</li>
+    <li>Tanto Faz</li>
+</ul>
+
+        </div>
     </div>
 
+    <script>
+        function abrirModal(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+        function fecharModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
 
-</div>
+    <!-- FOOTER -->
+    <footer class="bg-laranjaapagado py-6 w-full">
+        <div class="flex justify-between items-center w-full px-10">
 
-
-<!-- MODAL 1 -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="fecharModal('modal1')">&times;</span>
-        <div class="ebony-content">
-
-
-            <div class="flex flex-row gap-8 p-6 bg-[#003434] rounded-2xl items-center">
-
-
-                <div class="w-1/2 flex justify-center">
-                    <img src="/img/ebony-primeira-turne-km2-a-tour-datas-cidades-2.webp"
-                         class="w-full max-w-sm rounded-xl shadow-lg">
-                </div>
-           
-                <div class="w-1/2 text-white flex flex-col gap-4">
-                    <h2 class="text-3xl font-bold">Ebony</h2>
-           
-                    <p class="text-lg leading-relaxed">
-                        Milena Pinto de Oliveira, nascida nos anos 2000 na Baixada Fluminense,  
-                        suas músicas transitam entre hip hop, pop e funk. Ganhou espaço falando  
-                        sobre sexualidade, autoestima e empoderamento.
-                    </p>
-           
-                    <h3 class="text-2xl font-semibold mt-2">Hits</h3>
-           
-                    <ul class="space-y-2">
-                        <li class="flex items-center gap-2">
-                            <img src="/img/disco.png" class="w-6 h-6">
-                            Extraordinária (link para Spotify)
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <img src="/img/disco.png" class="w-6 h-6">
-                            100 Mili
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <img src="/img/disco.png" class="w-6 h-6">
-                            Pensamentos Intrusivos
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <img src="/img/disco.png" class="w-6 h-6">
-                            Kia
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <img src="/img/disco.png" class="w-6 h-6">
-                            Espero que entendam
-                        </li>
-                    </ul>
-                </div>
-           
+            <div class="flex items-center gap-4">
+                <img class="w-140 h-14 object-contain" src="img/logo.png" alt="Logo Afroascende">
+                <span class="text-amareloapagado font-titulos text-5xl tracking-widest uppercase">
+                    AFROASCENDE
+                </span>
             </div>
-           
+
+            <div class="flex items-center space-x-8 text-amareloclaro">
+                <a href="#" class="hover:text-amareloapagado">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h3V2h-3a5 5 0 0 0-5 5v2.5H7.75v4H11V22h3v-8.5z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-amareloapagado">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                    </svg>
+                </a>
+            </div>
         </div>
-       
-    </div>
-</div>
-
-
-<!-- MODAL 2 -->
-<div id="modal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="fecharModal('modal2')">&times;</span>
-        <h2>Liniker</h2>
-        <p>Adicione informações sobre a artista Liniker aqui.</p>
-    </div>
-</div>
-
-
-<!-- MODAL 3 -->
-<div id="modal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="fecharModal('modal3')">&times;</span>
-        <h2>Urias</h2>
-        <p>Texto sobre Urias pode ser colocado nesse espaço.</p>
-    </div>
-</div>
-
-
-<script>
-function abrirModal(id) {
-    document.getElementById(id).style.display = 'flex';
-}
-function fecharModal(id) {
-    document.getElementById(id).style.display = 'none';
-}
-</script>
-
-
-</body>
-</html>
-
-
-   
-<footer class="bg-laranjaapagado py-6 w-full">
-    <div class="flex justify-between items-center w-full px-10">
-
-
-        <div class="flex items-center gap-4">
-            <img
-                class="w-140 h-14 object-contain"
-                src="img/logo.png"
-                alt="Logo Afroascende"
-            >
-            <span class="text-amareloapagado font-titulos text-5xl tracking-widest uppercase shadow-text">
-                AFROASCENDE
-            </span>
-        </div>
-
-
-        <div class="flex items-center space-x-8 text-amareloclaro">
-            <a href="#" class="text-amareloclaro hover:text-amareloapagado transition-colors duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h3V2h-3a5 5 0 0 0-5 5v2.5H7.75v4H11V22h3v-8.5z"/>
-                </svg>
-            </a>
-           
-            <a href="#" class="text-amareloclaro hover:text-amareloapagado transition-colors duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
-                </svg>
-            </a>
-        </div>
-
-
-    </div>
-</footer>
-
-
-
+    </footer>
 
 </body>
 
-
 </html>
-
